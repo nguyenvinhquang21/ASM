@@ -1,0 +1,198 @@
+header {
+    background-color: #fff; /* Màu trắng tinh khôi */
+    color: #222; /* Chữ màu đen đậm */
+    padding: 15px 0; /* Giảm padding dọc */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Bóng nhẹ hơn */
+    position: sticky; /* Giữ header cố định khi cuộn (tùy chọn) */
+    top: 0; /* Cần thiết cho position: sticky */
+    z-index: 100; /* Đảm bảo không bị nội dung khác che phủ */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem; /* Giảm kích thước tiêu đề */
+    font-weight: 700;
+    color: #e44d26; /* Giữ màu chủ đạo */
+    margin: 0; /* Loại bỏ margin mặc định */
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    color: #555;
+    margin-left: 15px; /* Giảm margin trái */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 8px 12px; /* Thêm padding cho dễ click */
+    border-radius: 5px; /* Bo tròn nhẹ */
+}
+
+header nav a:hover {
+    color: #e44d26;
+    background-color: #f5f5f5; /* Thêm hiệu ứng hover nhẹ */
+}
+
+header .ml-auto {
+    margin-left: 20px; /* Thêm margin trái cho khu vực đăng nhập/đăng ký */
+}
+
+header .ml-auto a {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #555;
+}
+
+header .ml-auto a:hover {
+    border-color: #e44d26;
+    color: #e44d26;
+    background-color: #f5f5f5;
+}
+.hero {
+    margin-bottom: 30px; /* Giảm margin dưới */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Bóng nhẹ hơn */
+}
+
+.hero .bg-cover {
+    height: 400px; /* Giảm chiều cao hero */
+    display: flex;
+    flex-direction: column; /* Thay đổi hướng flex */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-position: center; /* Đảm bảo hình ảnh luôn căn giữa */
+}
+
+.hero .bg-opacity-50 {
+    background-color: rgba(0, 0, 0, 0.4); /* Opacity sáng hơn một chút */
+    width: 100%; /* Đảm bảo overlay phủ hết */
+    height: 100%; /* Đảm bảo overlay phủ hết */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h2 {
+    font-size: 3rem; /* Giảm nhẹ kích thước tiêu đề */
+    font-weight: 700; /* Giảm độ đậm */
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Bóng chữ nhẹ hơn */
+}
+
+.hero p {
+    font-size: 1.1rem; /* Giảm kích thước đoạn văn */
+    color: #eee;
+    margin-bottom: 25px;
+    max-width: 80%; /* Giới hạn chiều rộng đoạn văn */
+}
+
+.hero .bg-red-500 {
+    background-color: #e44d26;
+    color: #fff;
+    padding: 12px 25px; /* Giảm padding nút */
+    border-radius: 25px; /* Bo tròn hơn */
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Thêm transition cho box-shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bóng nút nhẹ hơn */
+}
+
+.hero .bg-red-500:hover {
+    background-color: #c83d1a;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); /* Hiệu ứng bóng khi hover */
+}
+.products {
+    padding: 20px 0; /* Giảm padding dọc */
+}
+
+.products h2 {
+    font-size: 2rem; /* Giảm kích thước tiêu đề */
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.products .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Điều chỉnh minmax */
+    gap: 20px; /* Giảm khoảng cách giữa các sản phẩm */
+}
+
+.products .bg-white {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* Bóng nhẹ hơn */
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.products .bg-white:hover {
+    transform: translateY(-3px); /* Giảm độ nổi khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bóng đậm hơn khi hover */
+}
+
+.products img {
+    width: 100%;
+    height: auto; /* Giảm chiều cao ảnh */
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.products .p-4 {
+    padding: 15px; /* Giảm padding bên trong card */
+    text-align: center; /* Căn giữa nội dung card */
+}
+
+.products h3 {
+    font-size: 1.2rem; /* Giảm kích thước tiêu đề sản phẩm */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.products p {
+    color: #777;
+    margin-bottom: 12px;
+    font-size: 0.9rem; /* Giảm kích thước giá */
+}
+
+.products .bg-blue-500 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px; /* Giảm padding nút */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem; /* Giảm kích thước chữ nút */
+}
+
+.products .bg-blue-500:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+footer {
+    background-color: #333;
+    color: #eee;
+    padding: 15px 0; /* Giảm padding dọc */
+    text-align: center;
+    font-size: 0.8rem; /* Giảm kích thước chữ */
+}
